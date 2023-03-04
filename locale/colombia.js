@@ -1,64 +1,72 @@
-(function() {
-  var moment = (typeof require !== 'undefined' && require !== null) && !require.amd ? require('moment') : this.moment;
+(function () {
+  var moment =
+    typeof require !== "undefined" && require !== null && !require.amd
+      ? require("moment")
+      : this.moment;
 
   moment.holidays.colombia = {
     "Día de los Reyes Magos": {
-      date: '1/9',
-      keywords: ['reyes magos']
+      date: "1/9",
+      keywords: ["reyes magos"],
     },
     "Día de San José": {
-      date: '3/20',
-      keywords: ['Día del hombre']
+      date: "3/20",
+      keywords: ["Día del hombre"],
     },
-    "Día del Trabajo": {
-      date: '4/1',
+    "Domingo de ramos": {
+      date: "4/2",
     },
-    "Día de la Ascensión": {
-      date: '5/29',
+    "Jueves santo": {
+      date: "4/6",
     },
-    "Corpus Christi": {
-      date: '6/19',
-      keywords: ['festividad', 'cristiana']
+    "viernes santo": {
+      date: "4/7",
     },
-    "Sagrado Corazón" : {
-      date: '6/26',
-      keywords: ['festividad', 'cristiana']
+    "domingo resureccion": {
+      date: "4/9",
     },
-    "San Pedro y San Pablo": {
-      date: '7/3',
-      keywords: ['festividad', 'cristiana']
+    "dia de trabajo": {
+      date: "5/1",
     },
-    "Día de la Independencia": {
-      date: '7/20',
-      keywords: ['bandera', 'independencia Colombia', 'libertad']
+    "dia de la ascencion": {
+      date: "5/22",
     },
-    "Batalla de Boyacá": {
-      date: '8/7',
-      keywords: ['Batalla de Boyaca','Colombia', 'libertad']
+    "corpus crit": {
+      date: "6/12",
     },
-    "La asunción de la Virgen ": {
-      date: '8/21',
-      keywords: ['festividad', 'cristiana']
+    "sagrado corazon": {
+      date: "6/19",
     },
-    "Día de la Raza": {
-      date: '10/16',
-      keywords: ['Raza','abolicion de esclavitud']
+    "san pedro": {
+      date: "7/3",
     },
-    "Todos los Santos ": {
-      date: '11/6',
-      keywords: ['festividad', 'cristiana']
-    }, 
-    "Independencia de Cartagena":{
-    	date: '11/13'
+    independencia: {
+      date: "7/20",
     },
-    "Día de la Inmaculada Concepción ": {
-      date: '12/8',
-      keywords: ['festividad', 'cristiana']
+    independencia: {
+      date: "8/7",
     },
-    "Día de Navidad ": {
-      date: '12/8',
-      keywords: ['christmas', 'navidad', 'merryxmas']
-   }    
+    raza: {
+      date: "10/16",
+    },
+    santos: {
+      date: "11/6",
+    },
+    cartagena: {
+      date: "11/13",
+    },
+    concepcion: {
+      date: "12/8",
+    },
+    navidad: {
+      date: "12/25",
+    },
   };
-  if ((typeof module !== 'undefined' && module !== null ? module.exports : void 0) != null) { module.exports = moment; }
-}).call(this);
+  if (
+    (typeof module !== "undefined" && module !== null
+      ? module.exports
+      : void 0) != null
+  ) {
+    module.exports = moment;
+  }
+}.call(this));
